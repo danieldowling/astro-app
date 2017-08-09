@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <div class="form-group">
+    <label for="planet">Select Planet</label>
+    <select name="planet" id="planet" class="form-control" ngModel>
+      <option *ngFor="let planet of planetOptions" [value]="planet.value">
+        {{ planet.display }}
+      </option>
+    </select>
+  </div>
+  <button class="btn btn-primary" type="submit">Search Images</button>
+</form>
