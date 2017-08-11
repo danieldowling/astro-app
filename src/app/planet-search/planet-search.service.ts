@@ -9,7 +9,7 @@ export class PlanetSearchService {
   onSubmit(submittedForm) {
     const params = new URLSearchParams();
     params.set('planet', submittedForm);
-    return this.http.get(`/images/`, { search: params })
+    return this.http.get(`https://planetpic.herokuapp.com/images/`, { search: params })
     .subscribe(res => {
         console.log(res);
         this.planetInfo = res.json().collection.items;
