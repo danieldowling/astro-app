@@ -26,6 +26,7 @@ export class PlanetSearchComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   onSubmit(submittedForm) {

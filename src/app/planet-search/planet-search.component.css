@@ -1,0 +1,31 @@
+.planet-search-container {
+  width: 94%;
+  margin: 0px auto;
+}
+
+.planet-search-container h1 {
+  color: rebeccapurple;
+  margin-left: 10px;
+}
+
+.planet-search-container label {
+  margin-left: 10px;
+}
+
+.planet-search-container select {
+  margin-left: 10px;
+  width: 26%;
+}
+
+.planet-search-container button {
+  margin-left: 10px;
+  width: 26%;
+  margin-top: 10px;
+}
+
+.jumbotron {
+  padding-top: 1px;
+  border-radius: 2px;
+  margin-bottom: 0px;
+  padding-bottom: 28px;
+}

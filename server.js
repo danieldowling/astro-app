@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
 });
 
 app.get('/images', (req, response) => {
-  request(`https://images-api.nasa.gov/search?q=${req.query.planet}`, (err, res, body) => {
+  request(`https://images-api.nasa.gov/search?q=${req.query.planet}&media_type=image`, (err, res, body) => {
     response.send(body)
     console.log(body)
   })
