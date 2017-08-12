@@ -1,8 +1,8 @@
 .planet-container {
   background-image: url('../../images/astro-app.jpg');
-  padding: 8px;
+  padding: 20px;
   border-radius: 4px;
-  width: 94%;
+  width: 98%;
   margin: 0px auto;
 }
 

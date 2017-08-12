@@ -1,5 +1,5 @@
 .planet-search-container {
-  width: 94%;
+  width: 98%;
   margin: 0px auto;
 }
 
@@ -10,6 +10,7 @@
 
 .planet-search-container label {
   margin-left: 10px;
+  margin-top: 20px;
 }
 
 .planet-search-container select {
@@ -27,6 +28,27 @@
   padding-top: 1px;
   border-radius: 2px;
   margin-bottom: 0px;
-  padding-bottom: 28px;
+  padding-bottom: 50px;
   padding-left: 14px;
+  display: block;
+}
+
+.selected-planet-info {
+  color: royalblue;
+  display: block;
+  margin-left: 360px;
+  margin-top: -98px;
+}
+
+.selected-planet-info ul {
+  width: 80%;
+  padding: 6px;
+  border: 1px solid royalblue;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.selected-planet-info ul li {
+  margin: 10px;
+  list-style: none;
 }

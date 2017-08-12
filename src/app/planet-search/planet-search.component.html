@@ -9,6 +9,23 @@
             </option>
           </select>
     <button class="btn btn-primary" type="submit">Search Images</button>
+    <div class="selected-planet-info">
+      <h3>
+        {{ planetSelected }}
+      </h3>
+      <ul>
+        <li>
+          {{ planetInfo.moon }}
+        </li>
+        <li>
+          {{ planetInfo.year }}
+        </li>
+        <li>
+          {{ planetInfo.type }}
+        </li>
+      </ul>
+    </div>
     </form>
   </div>
 </div>
+
