@@ -1,0 +1,10 @@
+<div>
+  <ul class="nav nav-tabs">
+    <li role="presentation" [ngClass]="{active: chosenList === 'allPhotos'}">
+      <a (click)="onChoose('allPhotos')" style="cursor:pointer">All Photos</a>
+    </li>
+    <li role="presentation" [ngClass]="{active: chosenList === 'likedPhotos'}">
+      <a (click)="onChoose('likedPhotos')" style="cursor:pointer">Liked Photos</a>
+    </li>
+  </ul>
+</div>

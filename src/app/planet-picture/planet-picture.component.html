@@ -5,6 +5,9 @@
       <h3> {{ planetInfo.data[0].title }} </h3>
       <p> {{ planetInfo.data[0].description }} </p>
     </div>
+    <button (click)="photoLiked('true')" stype="button" class="btn btn-default btn-lg" >
+      <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Like
+    </button>
   </div>
 </div>
 

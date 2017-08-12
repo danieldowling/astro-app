@@ -9,6 +9,7 @@ import { PlanetPictureComponent } from './planet-picture/planet-picture.componen
 import { PlanetSearchComponent } from './planet-search/planet-search.component';
 import { PlanetPictureListComponent } from './planet-picture-list/planet-picture-list.component';
 import { PlanetSearchService } from './planet-search/planet-search.service';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PlanetSearchService } from './planet-search/planet-search.service';
     HeaderComponent,
     PlanetPictureComponent,
     PlanetSearchComponent,
-    PlanetPictureListComponent
+    PlanetPictureListComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,

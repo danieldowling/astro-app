@@ -24,47 +24,47 @@ export class PlanetSearchComponent implements OnInit {
     {
       moon: `Mercury has no moon!`,
       year: `One year on Mercury is 88 Earth days!`,
-      type: `Mercury is a terrestrial planet`
+      type: `Mercury is a terrestrial planet`,
     },
     {
       moon: `Venus has no moon!`,
       year: `One year on Venus is 225 Earth days!`,
-      type: `Venus is a terrestrial planet`
+      type: `Venus is a terrestrial planet`,
     },
     {
       moon: `Earth's moon is The Moon!`,
       year: `One year on Earth is 365 days!`,
-      type: `Earth is a terrestrial planet`
+      type: `Earth is a terrestrial planet`,
     },
     {
       moon: `Mars has two moons, Phobos and Deimos!`,
       year: `One year on Mars is 687 Earth days!`,
-      type: `Mars is a terrestrial planet`
+      type: `Mars is a terrestrial planet`,
     },
     {
       moon: `Jupiter is surrounded by more than 50 moons, the four main moons are Europa, Callisto, Ganymede and Io!`,
       year: `One year on Jupiter is 4,333 Earth days!`,
-      type: `Jupiter is a Jovian planet`
+      type: `Jupiter is a Jovian planet`,
     },
     {
       moon: `Saturn is surrounded by more than 50 moons, the five main moons are Lapetus, Rhea, Dione, Tethys, and Hyperion!`,
       year: `One year on Saturn is 10,759 Earth days!`,
-      type: `Saturn is a Jovian planet`
+      type: `Saturn is a Jovian planet`,
     },
     {
       moon: `Uranus is surrounded by 27 moons, the five main moons are Ariel, Miranda, Titania, Oberon, and Umbriel!`,
       year: `One year on Uranus is 30,688 Earth days!`,
-      type: `Uranus is a Jovian planet`
+      type: `Uranus is a Jovian planet`,
     },
     {
       moon: `Neptune is surrounded by 13 moons, the five main moons are Triton, Nereid, Naiad, Thalssa, and Despina!`,
       year: `One year on Neptune is 60,182 Earth days!`,
-      type: `Neptune is a Jovian planet`
+      type: `Neptune is a Jovian planet`,
     },
     {
       moon: `Pluto is surrounded by 5 moons, they are Charon, Styx, Nix, Kerberos, and Hydra!`,
       year: `One year on Pluto is 90,500 Earth days!`,
-      type: `Pluto is a rocky ice planet`
+      type: `Pluto is a rocky ice planet`,
     },
   ]
   planetSelected;
@@ -75,9 +75,7 @@ export class PlanetSearchComponent implements OnInit {
     this.planetService = planetService;
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   onSubmit(submittedForm) {
     console.log(submittedForm.value.planet);

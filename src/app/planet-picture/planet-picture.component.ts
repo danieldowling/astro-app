@@ -8,10 +8,18 @@ import { PlanetSearchService } from '../planet-search/planet-search.service';
 })
 export class PlanetPictureComponent implements OnInit {
   @Input() planetInfo;
+  @Input() likedPhotos;
+  planetSevice: PlanetSearchService;
 
-  constructor(planetService: PlanetSearchService) {}
+  constructor(planetService: PlanetSearchService) {
+    this.planetSevice = planetService;
+  }
 
   ngOnInit() {
+  }
+
+  photoLiked(likedStatus) {
+    console.log(likedStatus);
   }
 
 }

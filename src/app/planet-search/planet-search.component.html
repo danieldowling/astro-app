@@ -3,13 +3,13 @@
     <h1>Astro App</h1>
     <form (ngSubmit)="onSubmit(form)" #form="ngForm">
         <label for="planet">Select Planet</label>
-          <select name="planet" id="planet" class="form-control" ngModel>
+          <select name="planet" id="planet" class="form-control" ngModel #planetCtrl="ngModel">
             <option *ngFor="let planet of planetOptions" [value]="planet.value">
               {{ planet.display }}
             </option>
           </select>
     <button class="btn btn-primary" type="submit">Search Images</button>
-    <div class="selected-planet-info">
+    <div class="selected-planet-info" *ngIf="planetCtrl.touched">
       <h3>
         {{ planetSelected }}
       </h3>
