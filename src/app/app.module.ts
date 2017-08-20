@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,6 +11,11 @@ import { PlanetSearchComponent } from './planet-search/planet-search.component';
 import { PlanetPictureListComponent } from './planet-picture-list/planet-picture-list.component';
 import { PlanetSearchService } from './planet-search/planet-search.service';
 import { TabsComponent } from './tabs/tabs.component';
+
+const routes = [
+  { path: '',  component: TabsComponent },
+  { path: 'allPhotos', component: PlanetSearchComponent }
+];
 
 @NgModule({
   declarations: [
@@ -24,7 +30,8 @@ import { TabsComponent } from './tabs/tabs.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [PlanetSearchService],
   bootstrap: [AppComponent]

@@ -5,6 +5,9 @@ import { Http, Response, URLSearchParams } from '@angular/http';
 export class PlanetSearchService {
   planetInfo = [];
   likedPhotos = [];
+  planetImage;
+  planetTitle;
+  planetDescription;
 
   constructor(private http: Http) { }
     onSubmit(submittedForm) {
@@ -17,7 +20,16 @@ export class PlanetSearchService {
           console.log(this.planetInfo);
       });
   }
-  getLikedPhotos() {
-    console.log(this.likedPhotos)
+
+  photoLiked(likedPhoto) {
+    console.log(this.planetInfo);
+    this.likedPhotos.push(likedPhoto);
+    console.log(this.likedPhotos);
   }
 }
+
+    // const likedPlanetPhoto = {
+    //   image: this.planetInfo.links[0].href,
+    //   title: this.planetInfo.data[0].title,
+    //   description: this.planetInfo.data[0].description
+    // };

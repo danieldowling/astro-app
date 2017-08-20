@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { PlanetSearchService } from '../planet-search/planet-search.service';
 
 @Component({
@@ -8,18 +8,15 @@ import { PlanetSearchService } from '../planet-search/planet-search.service';
 })
 export class PlanetPictureComponent implements OnInit {
   @Input() planetInfo;
-  @Input() likedPhotos;
   planetSevice: PlanetSearchService;
 
-  constructor(planetService: PlanetSearchService) {
-    this.planetSevice = planetService;
-  }
+  constructor(public planetService: PlanetSearchService) {}
 
   ngOnInit() {
   }
 
-  photoLiked(likedStatus) {
-    console.log(likedStatus);
+  photoLiked(likedPhoto) {
+    return this.planetService.photoLiked(likedPhoto);
   }
 
 }
