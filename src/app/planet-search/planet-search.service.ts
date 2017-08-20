@@ -23,13 +23,14 @@ export class PlanetSearchService {
 
   photoLiked(likedPhoto) {
     console.log(this.planetInfo);
-    this.likedPhotos.push(likedPhoto);
+    const likedPlanetPhoto = {
+      image: likedPhoto.links[0].href,
+      title: likedPhoto.data[0].title,
+      description: likedPhoto.data[0].description
+    };
+    this.likedPhotos.push(likedPlanetPhoto);
     console.log(this.likedPhotos);
   }
 }
 
-    // const likedPlanetPhoto = {
-    //   image: this.planetInfo.links[0].href,
-    //   title: this.planetInfo.data[0].title,
-    //   description: this.planetInfo.data[0].description
-    // };
+

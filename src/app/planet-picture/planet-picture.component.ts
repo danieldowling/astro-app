@@ -8,6 +8,7 @@ import { PlanetSearchService } from '../planet-search/planet-search.service';
 })
 export class PlanetPictureComponent implements OnInit {
   @Input() planetInfo;
+  @Input() likedList;
   planetSevice: PlanetSearchService;
 
   constructor(public planetService: PlanetSearchService) {}

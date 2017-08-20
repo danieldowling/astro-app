@@ -11,10 +11,13 @@ import { PlanetSearchComponent } from './planet-search/planet-search.component';
 import { PlanetPictureListComponent } from './planet-picture-list/planet-picture-list.component';
 import { PlanetSearchService } from './planet-search/planet-search.service';
 import { TabsComponent } from './tabs/tabs.component';
+import { PlanetLikedComponent } from './planet-liked/planet-liked.component';
+import { PlanetLikedPictureComponent } from './planet-liked-picture/planet-liked-picture.component';
 
 const routes = [
-  { path: '',  component: TabsComponent },
-  { path: 'allPhotos', component: PlanetSearchComponent }
+  { path: '', component: PlanetSearchComponent },
+  { path: 'search', component: PlanetSearchComponent },
+  { path: 'liked', component: PlanetLikedComponent }
 ];
 
 @NgModule({
@@ -24,7 +27,9 @@ const routes = [
     PlanetPictureComponent,
     PlanetSearchComponent,
     PlanetPictureListComponent,
-    TabsComponent
+    TabsComponent,
+    PlanetLikedComponent,
+    PlanetLikedPictureComponent
   ],
   imports: [
     BrowserModule,
